@@ -19,3 +19,9 @@ jobs:
             echo A comment on issue $NUMBER
           env:
             NUMBER: ${{ github.event.issue.number }}
+            
+
+        - uses: HarshPanchal29051990/issue-assigner@v1
+          with:
+            GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+            WITH_COMMENTS: true

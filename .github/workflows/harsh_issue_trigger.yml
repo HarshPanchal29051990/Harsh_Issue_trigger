@@ -21,7 +21,7 @@ jobs:
             NUMBER: ${{ github.event.issue.number }}
             
 
-        - uses: Harsh_Issue_trigger/issue-assigner@v1
+        - uses: Harsh_Issue_trigger/issue-assignees@v1
           with:
             GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
             WITH_COMMENTS: true

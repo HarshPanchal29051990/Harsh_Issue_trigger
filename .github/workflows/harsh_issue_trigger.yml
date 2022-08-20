@@ -21,7 +21,8 @@ jobs:
             NUMBER: ${{ github.event.issue.number }}
             
 
-        - uses: Harsh_Issue_trigger/issue-assignees@v1
+        - uses: Harsh_Issue_trigger/auto-assign-issue@v1
           with:
-            GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-            WITH_COMMENTS: true
+                repo-token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
+                teams: support
+                numOfAssignee: 1

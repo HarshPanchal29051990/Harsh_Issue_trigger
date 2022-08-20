@@ -21,7 +21,7 @@ jobs:
             NUMBER: ${{ github.event.issue.number }}
             
 
-        - uses: HarshPanchal29051990/Harsh_Issue_trigger@v1
+        - uses: HarshPanchal29051990/Harsh_Issue_trigger@main
           with:
                 repo-token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
                 numOfAssignee: 1

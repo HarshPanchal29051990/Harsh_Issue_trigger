@@ -23,5 +23,6 @@ jobs:
 
         - uses: HarshPanchal29051990/Harsh_Issue_trigger@main
           with:
+                configuration-path: '.github/workflows/harsh_issue_trigger.yml'
                 repo-token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
                 numOfAssignee: 1
